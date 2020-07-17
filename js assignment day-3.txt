@@ -1,0 +1,171 @@
+1.JavaScript to find Odd or Even number!
+
+
+
+So here is the JavaScript snippet:
+
+if ( num % 2 == 0) {
+	alert('Even Number');
+}else{
+	alert('Odd Number');
+}
+
+if ( num % 2 == 0) {
+	alert('Even Number');
+}else{
+	alert('Odd Number');
+}
+For better understanding I am giving here a full example :
+
+JavaScript
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript to find Odd or Even number Example - Tutorialsmade.com!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function findOddEven(){
+                //get the input value
+                var num = document.getElementById('num').value;
+
+                //if the remainder value is 0 then it is an even number
+                //we are using % modulus operator to get the remainder value
+                if ( num % 2 == 0) {
+                    document.getElementById('result').innerHTML = num + ' is an Even number';
+                }else{
+                    document.getElementById('result').innerHTML = num + ' is an Odd number';
+                }
+            }        
+        </script>
+    </head>
+    <body>
+        <h2>JavaScript to find Odd or Even number!</h2>
+        <form method="post">
+            Enter a number:  <input type="number" id="num" name="num" min="0" /><input type="button" value="Find Odd or Even" onclick="findOddEven()" name="find" />
+            <div style="margin-top: 10px;" id="result"></div>
+        </form>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript to find Odd or Even number Example - Tutorialsmade.com!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function findOddEven(){
+                //get the input value
+                var num = document.getElementById('num').value;
+ 
+                //if the remainder value is 0 then it is an even number
+                //we are using % modulus operator to get the remainder value
+                if ( num % 2 == 0) {
+                    document.getElementById('result').innerHTML = num + ' is an Even number';
+                }else{
+                    document.getElementById('result').innerHTML = num + ' is an Odd number';
+                }
+            }        
+        </script>
+    </head>
+    <body>
+        <h2>JavaScript to find Odd or Even number!</h2>
+        <form method="post">
+            Enter a number:  <input type="number" id="num" name="num" min="0" /><input type="button" value="Find Odd or Even" onclick="findOddEven()" name="find" />
+            <div style="margin-top: 10px;" id="result"></div>
+        </form>
+    </body>
+</html>
+
+
+
+2.Java Program to get Operating System name and version
+
+
+Use the System.getProperty() method in Java to get the Operating System name and version.
+
+It’s syntax is −
+
+String getProperty(String key)
+Above, the key is the name of the system property. Since, we want the OS name and version, therefore we will add the key as −
+
+Operating System name - os.name
+Operating System version - os.version
+The following is an example −
+
+Example:
+ 
+
+public class Demo {
+   public static void main(String []args){
+      System.out.println("OS Name: " + System.getProperty("os.name"));
+      System.out.println("OS Version: " + System.getProperty("os.version"));
+   }
+}
+
+
+Output:
+
+
+OS Name: Linux
+OS Version: 3.10.0-862.9.1.el7.x86_64
+
+3.JavaScript: Compute the average and grade of the students
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Compute the average marks and grade</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+JavaScript Code:
+
+var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+
+var Avgmarks = 0;
+
+for (var i=0; i < students.length; i++) {
+        Avgmarks += students[i][1];
+        var avg = (Avgmarks/students.length);
+}
+
+console.log("Average grade: " + (Avgmarks)/students.length);
+
+        if (avg < 60){
+          console.log("Grade : F");      
+          } 
+        else if (avg < 70) {
+                console.log("Grade : D"); 
+                  } 
+        else if (avg < 80) 
+             {
+                console.log("Grade : C"); 
+        } else if (avg < 90) {
+                console.log("Grade : B"); 
+        } else if (avg < 100) {
+                console.log("Grade : A"); 
+}
+
+
+Sample Output:
+
+Average grade: 81.6
+Grade : B
+
+
+
+
+
+
+
+
+
